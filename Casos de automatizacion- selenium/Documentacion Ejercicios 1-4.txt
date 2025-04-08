@@ -1,0 +1,32 @@
+Integrantes: David Santiago Torres FOnseca
+Materia: Pruebas de software I
+Nota: Buenas noches profe, aqui dejo los link de las documentaciones echas para el paso a paso de las automatizaciones, estos link son de una herramienta que me facilita la documentacion con imagenes para realizar guias y documentos. Se llama Scribe.
+
+Objetivo:
+Automatizar el llenado y envío de un formulario de contacto, y verificar que aparezca un
+mensaje de éxito.
+Documentacion Ejercicio 1.
+https://scribehow.com/shared/Submitting_a_Simple_HTML_Form_with_User_Data__LIlnjjzTQMKRRQUIROjNxw
+
+Objetivo:
+Automatizar una búsqueda de productos en una tienda en línea y verificar que se muestren
+resultados.
+Documentacion Ejercicio 2.
+https://scribehow.com/shared/How_to_Search_for_a_Product_on_Automation_Exercise__s-UR2Q_RT2ubQzH-xxbyJQ
+
+Objetivo:
+Automatizar la navegación entre varias páginas internas y validar que cada cambio de
+página sea exitoso.
+Documentacion Ejercicio 3.
+https://scribehow.com/shared/How_To_Download_Selenium_Clients_And_WebDriver_Bindings__6WLKEURbQ1a8EwVgtM9J3w
+
+Objetivo:
+Automatizar un caso de prueba negativo para verificar que un mensaje de error aparece tras
+ingresar credenciales incorrectas.
+Documentacion Ejercicio 4.
+https://scribehow.com/shared/How_To_Log_In_To_Practice_Test_Automation__9Tzwhc3ZSPy25TXAHRCecg
+
+
+
+Repositorio:
+https://github.com/DavidTorresB3/PRUEBAS_SOFTWARE_2025_1

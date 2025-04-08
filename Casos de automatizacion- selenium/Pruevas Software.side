@@ -1,0 +1,494 @@
+{
+  "id": "73b584c5-98e5-44c5-9042-737016976314",
+  "version": "2.0",
+  "name": "Pruevas Software",
+  "url": "https://practicetestautomation.com/practice-test-login/",
+  "tests": [{
+    "id": "73e88b48-5d8c-44ba-bc2c-3669c9e00dad",
+    "name": "Ejercicio 1",
+    "commands": [{
+      "id": "e89f440c-d671-4b23-9585-ed5cab1ee58f",
+      "comment": "",
+      "command": "open",
+      "target": "/html/html_forms.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29304536-7848-4bf2-88e8-1d0db5eb09c7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1112x665",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f9360c4-6318-4907-b7df-60ec4ed26d8a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,211.1999969482422)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf399710-b68d-4c1d-bb5d-79a038bac76b",
+      "comment": "",
+      "command": "click",
+      "target": "id=fname",
+      "targets": [
+        ["id=fname", "id"],
+        ["name=fname", "name"],
+        ["css=#fname", "css:finder"],
+        ["xpath=//input[@id='fname']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f2d28e3-e57a-460b-bb7a-4fa653d1d1ca",
+      "comment": "",
+      "command": "click",
+      "target": "id=fname",
+      "targets": [
+        ["id=fname", "id"],
+        ["name=fname", "name"],
+        ["css=#fname", "css:finder"],
+        ["xpath=//input[@id='fname']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3a50991-f6e9-45fe-807d-66cf8e6a7569",
+      "comment": "",
+      "command": "type",
+      "target": "id=fname",
+      "targets": [
+        ["id=fname", "id"],
+        ["name=fname", "name"],
+        ["css=#fname", "css:finder"],
+        ["xpath=//input[@id='fname']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "David"
+    }, {
+      "id": "1ad1b005-d8dc-4108-9d31-5da19b4dcc3a",
+      "comment": "",
+      "command": "type",
+      "target": "id=lname",
+      "targets": [
+        ["id=lname", "id"],
+        ["name=lname", "name"],
+        ["css=#lname", "css:finder"],
+        ["xpath=//input[@id='lname']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Torres"
+    }, {
+      "id": "809e3f1c-6a29-4ad5-898a-95c2b100232e",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2525",
+      "windowTimeout": 2000
+    }, {
+      "id": "c5aca715-ae14-40ab-ad4a-7d3d8d827b42",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2525}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48444ebf-d874-4c88-9faf-a82685cdb594",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(6)",
+      "targets": [
+        ["css=p:nth-child(6)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'The server has processed your input and returned this answer.')]", "xpath:innerText"]
+      ],
+      "value": "The server has processed your input and returned this answer."
+    }]
+  }, {
+    "id": "281b5e3c-ba41-485b-b48c-2e82b9d99681",
+    "name": "Ejercicio 2",
+    "commands": [{
+      "id": "09ead249-2c2e-4a97-a018-115f977e1488",
+      "comment": "",
+      "command": "open",
+      "target": "https://automationexercise.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f698662c-c493-447f-90fd-abf99844bbe4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1112x665",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "142781ff-775f-4dc9-bb02-d0491e31c85b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,89.5999984741211)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cde65083-592e-4bcd-9eea-c5a539855ef4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText= Products",
+      "targets": [
+        ["linkText= Products", "linkText"],
+        ["css=.navbar-nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//header[@id='header']/div/div/div/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/products')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9011e49d-974e-4f4b-bf10-5bace61d9bee",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,152.8000030517578)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d19639f-29a6-4732-9bf3-7143bc8d03fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_product",
+      "targets": [
+        ["id=search_product", "id"],
+        ["name=search", "name"],
+        ["css=#search_product", "css:finder"],
+        ["xpath=//input[@id='search_product']", "xpath:attributes"],
+        ["xpath=//section[@id='advertisement']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e9c1408-3cd2-46ab-b4dc-0b9fb067bca8",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_product",
+      "targets": [
+        ["id=search_product", "id"],
+        ["name=search", "name"],
+        ["css=#search_product", "css:finder"],
+        ["xpath=//input[@id='search_product']", "xpath:attributes"],
+        ["xpath=//section[@id='advertisement']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Green Side Placket Detail T-Shirt"
+    }, {
+      "id": "c424e82c-bdf7-4d34-a586-6f9da58e3157",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-search",
+      "targets": [
+        ["css=.fa-search", "css:finder"],
+        ["xpath=//button[@id='submit_search']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c495e281-62eb-4ec0-bb9d-8e8f3cfabfec",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4.800000190734863)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb6d3321-473d-4097-81c5-2e0ce67e3408",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,528)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "deab2832-be31-4c4c-80a6-ff63f41fb7ac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View Product",
+      "targets": [
+        ["linkText=View Product", "linkText"],
+        ["css=.nav-justified a", "css:finder"],
+        ["xpath=//a[contains(text(),'View Product')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/product_details/29')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ba5a7670-c8dc-4710-9374-aa6e2803f440",
+    "name": "Ejercicio 3",
+    "commands": [{
+      "id": "b2662efd-0cd5-49f7-a86e-5a643453c7e3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.selenium.dev/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc642de9-6204-4ecc-bce7-067bc3d89d06",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1214x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d5b2247-ce14-4490-9609-2268dc9ec21a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='main_navbar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Downloads')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce44e7c6-2625-4689-b36f-123dc696a373",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.d-1",
+      "targets": [
+        ["css=.d-1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Downloads')]", "xpath:innerText"]
+      ],
+      "value": "Downloads"
+    }, {
+      "id": "9962779f-ac90-4af2-b3b1-b44a77403b3f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.mt-3",
+      "targets": [
+        ["css=.mt-3", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Below is where you can find the latest releases of all the Selenium components.')]", "xpath:innerText"]
+      ],
+      "value": "Below is where you can find the latest releases of all the Selenium components."
+    }, {
+      "id": "8ed44bee-6103-4e99-88db-79d9f97ead32",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.lead:nth-child(3)",
+      "targets": [
+        ["css=.lead:nth-child(3)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'You can also find a list of previous releases, source code, and additional information for Maven users.')]", "xpath:innerText"]
+      ],
+      "value": "You can also find a list of previous releases, source code, and additional information for Maven users."
+    }, {
+      "id": "781cff8a-59e6-4d54-abb9-d57b959336ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(4) span",
+      "targets": [
+        ["css=.nav-item:nth-child(4) span", "css:finder"],
+        ["xpath=//div[@id='main_navbar']/ul/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Projects')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11890dde-283b-4a92-9fae-61b132db5f4e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.d-1",
+      "targets": [
+        ["css=.d-1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Projects')]", "xpath:innerText"]
+      ],
+      "value": "Projects"
+    }, {
+      "id": "d8d50c88-1664-4990-8210-ae2439ba7e17",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.lead",
+      "targets": [
+        ["css=.lead", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Selenium has many projects that combine to form a versatile testing system.')]", "xpath:innerText"]
+      ],
+      "value": "Selenium has many projects that combine to form a versatile testing system."
+    }, {
+      "id": "a6ed8986-05e1-4032-8d9a-b3a00814c680",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert-webdriver > .alert-heading",
+      "targets": [
+        ["css=.alert-webdriver > .alert-heading", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Selenium WebDriver')]", "xpath:innerText"]
+      ],
+      "value": "Selenium WebDriver"
+    }]
+  }, {
+    "id": "c768d9d5-66e4-45d3-8f36-c301efbe52ca",
+    "name": "Ejercicio 4",
+    "commands": [{
+      "id": "91e54c6b-0619-4690-9b23-03dffb8eb1f5",
+      "comment": "",
+      "command": "open",
+      "target": "https://practicetestautomation.com/practice-test-login/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e1ada8c-32f5-4663-ba42-b15939cf9ab3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "987x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2492a77c-e11e-4d19-8bff-902082a12aa1",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54aadddb-0afe-4b04-af6c-e3f3407bc1ef",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "estudiante"
+    }, {
+      "id": "8cae09cf-06f6-4088-a8d5-4fd1b9f894b4",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Password123"
+    }, {
+      "id": "bb3bde4d-dc65-46d5-a56d-b23ff94bc2b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/button", "xpath:idRelative"],
+        ["xpath=//section/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62e141a3-a45d-4ba2-a49b-9939b2cb3e5e",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=error",
+      "targets": [
+        ["id=error", "id"],
+        ["css=#error", "css:finder"],
+        ["xpath=//div[@id='error']", "xpath:attributes"],
+        ["xpath=//section[@id='login']/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div[2]", "xpath:position"]
+      ],
+      "value": "Your username is invalid!"
+    }, {
+      "id": "8cfd2921-5bc6-4a19-8a52-a6b04e58a55f",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "student"
+    }, {
+      "id": "cabb1593-2618-4d27-9018-e57a7b6f47f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Contrasenna1234"
+    }, {
+      "id": "82381c44-b6a8-4efd-a0c5-07ef109b6800",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/button", "xpath:idRelative"],
+        ["xpath=//section/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21462780-17b4-4030-80a4-bc71fcbcbfc5",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=error",
+      "targets": [
+        ["id=error", "id"],
+        ["css=#error", "css:finder"],
+        ["xpath=//div[@id='error']", "xpath:attributes"],
+        ["xpath=//section[@id='login']/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div[2]", "xpath:position"]
+      ],
+      "value": "Your password is invalid!"
+    }]
+  }],
+  "suites": [{
+    "id": "8300da77-79a2-4d95-af43-8dba817994c1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["73e88b48-5d8c-44ba-bc2c-3669c9e00dad"]
+  }],
+  "urls": ["https://www.w3schools.com/", "https://automationexercise.com/", "https://www.selenium.dev/", "https://practicetestautomation.com/practice-test-login/"],
+  "plugins": []
+}
