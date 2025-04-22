@@ -1,0 +1,7 @@
+paso a paso para Subir el contenido
+
+
+git pull
+git push
+git status
+git comit -m ""

@@ -1,0 +1,665 @@
+{
+  "id": "99713d45-ccf4-43d8-a75b-0c2ddc9f9c92",
+  "version": "2.0",
+  "name": "Orange HRM",
+  "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+  "tests": [{
+    "id": "57260a9b-6071-4984-8712-f4c3b8ffdfd8",
+    "name": "2-LoginError",
+    "commands": [{
+      "id": "38c9973d-3349-45ff-97bc-ea293ffe7e97",
+      "comment": "",
+      "command": "open",
+      "target": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49370196-97f7-4978-9339-ea15d1a8cb1f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "712x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96104a91-2860-4698-a0de-33c58e039b3f",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d704b6b7-ac0d-4f24-a14d-6ce86b2da401",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin"
+    }, {
+      "id": "2b9238da-e301-46cb-8e56-137b9cac072a",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "admin12345678"
+    }, {
+      "id": "86e1c3ec-e4e2-4f6d-ba56-e92ce1fe9bf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oxd-button",
+      "targets": [
+        ["css=.oxd-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da08cb35-dcd0-409a-9190-45b439eca50a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.oxd-alert-content-text",
+      "targets": [
+        ["css=.oxd-alert-content-text", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Invalid credentials')]", "xpath:innerText"]
+      ],
+      "value": "Invalid credentials"
+    }]
+  }, {
+    "id": "fbafcd4e-ce1d-4a57-aed3-64e17bf8179f",
+    "name": "1-Login",
+    "commands": [{
+      "id": "7071766a-391b-41c8-9f92-5219db7e1ada",
+      "comment": "",
+      "command": "open",
+      "target": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbe997b5-d9d2-4fb7-b65f-36fc7c110773",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "712x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15fd82b1-27b0-48cc-8b65-223b83d92889",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcd0d97e-3e63-422e-ba5e-04ddb2ef7ca9",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin"
+    }, {
+      "id": "ad4fe684-9381-44d4-90bc-98a52214a567",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "d4f8c8ec-fb92-4e24-ac4d-576e849e4d3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oxd-button",
+      "targets": [
+        ["css=.oxd-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e2d8f2b-4656-4b02-81c7-888439ecb7d1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.oxd-text--h6",
+      "targets": [
+        ["css=.oxd-text--h6", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/span/h6", "xpath:idRelative"],
+        ["xpath=//h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'Dashboard')]", "xpath:innerText"]
+      ],
+      "value": "Dashboard"
+    }]
+  }, {
+    "id": "87e75d63-d436-4668-8111-8852770af383",
+    "name": "3-cambioPass",
+    "commands": [{
+      "id": "0728a28b-cff5-4808-bcd4-c66f6c6e9bfd",
+      "comment": "",
+      "command": "open",
+      "target": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66eee167-7139-4759-a764-48a7c9ce1a0e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "712x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df7afeaa-5566-4d5e-96c6-9842ec518930",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d260d3e-1fe9-4476-b881-0a99367eeadd",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin"
+    }, {
+      "id": "dcfcd07d-cc2c-40e7-85cf-3e6255cd894c",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "admin12345678"
+    }, {
+      "id": "479215b4-d4f1-4766-afbd-abce3cbf6608",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oxd-button",
+      "targets": [
+        ["css=.oxd-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c84bc472-d31f-4cf4-9847-8d0b895f3cee",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.oxd-alert-content-text",
+      "targets": [
+        ["css=.oxd-alert-content-text", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Invalid credentials')]", "xpath:innerText"]
+      ],
+      "value": "Invalid credentials"
+    }, {
+      "id": "e64e2795-19d4-43fd-90b1-87bc8d0697d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.orangehrm-login-forgot-header",
+      "targets": [
+        ["css=.orangehrm-login-forgot-header", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[4]/p", "xpath:idRelative"],
+        ["xpath=//div[4]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Forgot your password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48281c8e-2c3c-4098-8b3c-b3d7148d57e7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.oxd-text--h6",
+      "targets": [
+        ["css=.oxd-text--h6", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/form/h6", "xpath:idRelative"],
+        ["xpath=//h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'Reset Password')]", "xpath:innerText"]
+      ],
+      "value": "Reset Password"
+    }, {
+      "id": "17f6fba9-6209-407b-b0d4-bf789b2cddc4",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cf25e8f-b9da-4397-8275-7226161978b6",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin"
+    }, {
+      "id": "76223616-64db-42c3-9443-67d63e9b6dcd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oxd-button--secondary",
+      "targets": [
+        ["css=.oxd-button--secondary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/form/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Reset Password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba5d9583-915f-4720-a505-2a716f5e0ca7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.oxd-text--h6",
+      "targets": [
+        ["css=.oxd-text--h6", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/h6", "xpath:idRelative"],
+        ["xpath=//h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'Reset Password link sent successfully')]", "xpath:innerText"]
+      ],
+      "value": "Reset Password link sent successfully"
+    }]
+  }, {
+    "id": "d6804056-303c-4f62-8c36-1b9838d9f504",
+    "name": "4-LoginSinDatos",
+    "commands": [{
+      "id": "b21dd7b3-736e-4d10-baab-5b44e72aeeba",
+      "comment": "",
+      "command": "open",
+      "target": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8916c84-c721-4f28-b4e3-6127bfc52092",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "712x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78e6bef8-700e-4be4-8c32-1a400e012bbe",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "548a7804-de7a-4f19-ba42-e4f325c1070f",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin"
+    }, {
+      "id": "80c207c7-f18c-40d3-9ebc-182d2ff3ddaa",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "Password"
+    }, {
+      "id": "45959832-dd8a-4b09-97f7-5f5b48b7d3d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oxd-button",
+      "targets": [
+        ["css=.oxd-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0155ca06-3858-404f-9c0b-4b630964c4a9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.oxd-alert-content-text",
+      "targets": [
+        ["css=.oxd-alert-content-text", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Invalid credentials')]", "xpath:innerText"]
+      ],
+      "value": "Invalid credentials"
+    }, {
+      "id": "4e285e3c-3ed5-4cf7-8a3f-eb94e44367c8",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd297149-894c-4883-9bdf-040c8bb314c9",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Login"
+    }, {
+      "id": "0042dcc2-7a3e-41b2-9df6-9cb3c48a7fed",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "82748c26-743b-4f41-a43e-48aaf3a7bb34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oxd-button",
+      "targets": [
+        ["css=.oxd-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a65206ef-a3a4-4d37-bf65-ae5113f86211",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.oxd-alert-content-text",
+      "targets": [
+        ["css=.oxd-alert-content-text", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Invalid credentials')]", "xpath:innerText"]
+      ],
+      "value": "Invalid credentials"
+    }, {
+      "id": "040466a9-8c95-4efc-9187-41db2ed47c7e",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d30cfa8-0bfe-45ae-9772-77fe6406ffd1",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin"
+    }, {
+      "id": "f9fec628-d745-4935-b886-2e67f953639c",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "c25422a8-8b23-4c13-b94d-7adb32cd9eda",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oxd-button",
+      "targets": [
+        ["css=.oxd-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19118467-61ad-4332-b010-ee74b69f2d17",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.oxd-text--h6",
+      "targets": [
+        ["css=.oxd-text--h6", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/span/h6", "xpath:idRelative"],
+        ["xpath=//h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'Dashboard')]", "xpath:innerText"]
+      ],
+      "value": "Dashboard"
+    }]
+  }, {
+    "id": "06de8b78-63ce-4ba2-b27d-754ad84dab80",
+    "name": "5-Navegacion",
+    "commands": [{
+      "id": "07b5b1d6-ce8d-47aa-8724-44d0a6fd29e5",
+      "comment": "",
+      "command": "open",
+      "target": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1734152-e541-4e11-b139-ea80e2c3db72",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "712x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b35f38e3-072d-44fb-89b2-a210f702ed12",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14e4582d-6084-4b7b-958c-fd6722624503",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin"
+    }, {
+      "id": "5e9468c3-2bdc-4feb-8854-c82b95085dc3",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "9736a017-7e1f-4e10-8dd9-0a8a652f8002",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oxd-button",
+      "targets": [
+        ["css=.oxd-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a0f4cf0-0281-4df8-9240-94ec8f078ce0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.oxd-text--h6",
+      "targets": [
+        ["css=.oxd-text--h6", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/span/h6", "xpath:idRelative"],
+        ["xpath=//h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'Dashboard')]", "xpath:innerText"]
+      ],
+      "value": "Dashboard"
+    }, {
+      "id": "3e9d3952-4868-4a2f-999a-e2ccb58590e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bi-list",
+      "targets": [
+        ["css=.bi-list", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/i", "xpath:idRelative"],
+        ["xpath=//div/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16074634-8af7-49da-a024-1bf24dd24743",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oxd-main-menu-item-wrapper:nth-child(2) .oxd-text",
+      "targets": [
+        ["css=.oxd-main-menu-item-wrapper:nth-child(2) .oxd-text", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/aside/nav/div[2]/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'PIM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de3ac7b7-7529-476b-910b-aea819f00043",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.oxd-text--h6",
+      "targets": [
+        ["css=.oxd-text--h6", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/header/div/div/span/h6", "xpath:idRelative"],
+        ["xpath=//h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'PIM')]", "xpath:innerText"]
+      ],
+      "value": "PIM"
+    }]
+  }],
+  "suites": [{
+    "id": "d104b188-e6b8-4262-93a7-36a730329dc4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["57260a9b-6071-4984-8712-f4c3b8ffdfd8"]
+  }],
+  "urls": ["https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"],
+  "plugins": []
+}
