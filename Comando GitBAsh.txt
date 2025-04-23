@@ -1,3 +1,6 @@
+importar un repositorio 
+git clone "link del github"
+
 paso a paso para Subir el contenido
 git status
 
